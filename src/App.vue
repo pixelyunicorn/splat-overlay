@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>League Maps</h1>
+    <h1 id="league">League Maps</h1>
     <h2>Now</h2>
     <ListRotation v-bind:schedule="schedules.league[0]"/>
     <h2>Next</h2>
@@ -8,7 +8,7 @@
     <h2>Later</h2>
     <ListRotation v-bind:schedule="schedules.league[2]"/>
     <p class="credit">Live data provided by <img src="src/assets/splatoon2ink.png" width="16" height="16" alt="" /> Splatoon2.ink.</p>
-    <h1>SoloQ Maps</h1>
+    <h1 id="ranked">Ranked Maps</h1>
     <h2>Now</h2>
     <ListRotation v-bind:schedule="schedules.gachi[0]"/>
     <h2>Next</h2>
@@ -16,7 +16,7 @@
     <h2>Later</h2>
     <ListRotation v-bind:schedule="schedules.gachi[2]"/>
     <p class="credit">Live data provided by <img src="src/assets/splatoon2ink.png" width="16" height="16" alt="" /> Splatoon2.ink.</p>
-    <h1>Regular Maps</h1>
+    <h1 id="turf">Turf Maps</h1>
     <h2>Now</h2>
     <ListRotation v-bind:schedule="schedules.regular[0]"/>
     <h2>Next</h2>
@@ -50,9 +50,14 @@ export default {
 </script>
 
 <style lang="scss">
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #app {
   font-family: Calibre, Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -88,5 +93,6 @@ li {
 .credit {
   text-align: left;
   margin-left: 220px;
+  margin-bottom: 5em;
 }
 </style>
