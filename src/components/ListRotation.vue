@@ -102,6 +102,7 @@ $border-radius: 6px;
   height: 200px;
   box-shadow: inset 0 0 0 8px rgba(0, 0, 0, 0.25);
   border-radius: $border-radius;
+  overflow: hidden;
 
   span {
     position: absolute;
