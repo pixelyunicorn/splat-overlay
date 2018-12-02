@@ -1,27 +1,27 @@
 <template>
   <div id="app">
-    <h1 id="league">League Maps</h1>
-    <h2>Now</h2>
+    <h1 data-id="league">League Maps</h1>
+    <h2>NOW</h2>
     <ListRotation v-bind:schedule="schedules.league[0]"/>
-    <h2>Next</h2>
+    <h2>NEXT</h2>
     <ListRotation v-bind:schedule="schedules.league[1]"/>
-    <h2>Later</h2>
+    <h2>LATER</h2>
     <ListRotation v-bind:schedule="schedules.league[2]"/>
     <p class="credit">Live data provided by <img src="src/assets/splatoon2ink.png" width="16" height="16" alt="" /> Splatoon2.ink.</p>
-    <h1 id="ranked">Ranked Maps</h1>
-    <h2>Now</h2>
+    <h1 data-id="ranked">Ranked Maps</h1>
+    <h2>NOW</h2>
     <ListRotation v-bind:schedule="schedules.gachi[0]"/>
-    <h2>Next</h2>
+    <h2>NEXT</h2>
     <ListRotation v-bind:schedule="schedules.gachi[1]"/>
-    <h2>Later</h2>
+    <h2>LATER</h2>
     <ListRotation v-bind:schedule="schedules.gachi[2]"/>
     <p class="credit">Live data provided by <img src="src/assets/splatoon2ink.png" width="16" height="16" alt="" /> Splatoon2.ink.</p>
-    <h1 id="turf">Turf Maps</h1>
-    <h2>Now</h2>
+    <h1 data-id="turf">Turf Maps</h1>
+    <h2>NOW</h2>
     <ListRotation v-bind:schedule="schedules.regular[0]"/>
-    <h2>Next</h2>
+    <h2>NEXT</h2>
     <ListRotation v-bind:schedule="schedules.regular[1]"/>
-    <h2>Later</h2>
+    <h2>LATER</h2>
     <ListRotation v-bind:schedule="schedules.regular[2]"/>
     <p class="credit">Live data provided by <img src="src/assets/splatoon2ink.png" width="16" height="16" alt="" /> Splatoon2.ink.</p>
   </div>
@@ -77,6 +77,7 @@ h2 {
   font-weight: bold;
   color: purple;
   text-align: left;
+  font-size: 36px;
   margin-left: 220px;
 }
 
