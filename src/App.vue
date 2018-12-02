@@ -43,7 +43,7 @@ export default {
   mounted () {
     axios
       // .get('mocks/schedules.json')
-      .get('https://cors-anywhere.herokuapp.com/https://splatoon2.ink/data/schedules.json')
+      .get('https://splatoon2.ink/data/schedules.json')
       .then(response => (this.schedules = response.data))
   }
 }
