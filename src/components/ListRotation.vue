@@ -24,18 +24,21 @@ export default {
 </script>
 
 <style lang="scss">
-$spacing-unit: 10px;
+$spacing-unit: 20px;
 $border-radius: 6px;
+
 [layout="grid"] {
   display: grid;
   grid-column-gap: $spacing-unit;
   grid-row-gap: $spacing-unit;
 }
+
 @for $i from 1 through 6 {
   [column-count="#{$i}"] {
     grid-template-columns: repeat(#{$i}, 1fr);
   }
 }
+
 @for $i from 1 through 6 {
   [row-count="#{$i}"] {
     grid-template-rows: repeat(#{$i}, auto);
@@ -46,9 +49,11 @@ $border-radius: 6px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+
   span {
     display: none;
   }
+
   &:hover {
     span {
       display: block;
@@ -64,7 +69,7 @@ $border-radius: 6px;
   position: relative;
   width: 200px;
   height: 200px;
-  box-shadow: inset 0 0 0 6px rgba(0,0,0,.15);
+  box-shadow: inset 0 0 0 6px rgba(0, 0, 0, 0.15);
   border-radius: $border-radius;
 
   span {
@@ -82,8 +87,8 @@ $border-radius: 6px;
     padding-left: .5em;
     // padding-right: 3.25em;
     font-weight: bold;
-    filter: drop-shadow(2px 4px 4px rgba(0,20,70,.75));
-    -webkit-filter: drop-shadow(2px 4px 4px rgba(0,20,70,.75));
+    filter: drop-shadow(2px 4px 4px rgba(0, 20, 70, 0.75));
+    -webkit-filter: drop-shadow(2px 4px 4px rgba(0, 20, 70, 0.75));
   }
 }
 </style>

@@ -7,6 +7,7 @@
     <ListRotation v-bind:schedule="schedules.league[1]"/>
     <h2>Later</h2>
     <ListRotation v-bind:schedule="schedules.league[2]"/>
+    <p class="credit">Live data provided by <img src="src/assets/splatoon2ink.png" width="16" height="16" alt="" /> Splatoon2.ink.</p>
     <h1>SoloQ Maps</h1>
     <h2>Now</h2>
     <ListRotation v-bind:schedule="schedules.gachi[0]"/>
@@ -14,6 +15,7 @@
     <ListRotation v-bind:schedule="schedules.gachi[1]"/>
     <h2>Later</h2>
     <ListRotation v-bind:schedule="schedules.gachi[2]"/>
+    <p class="credit">Live data provided by <img src="src/assets/splatoon2ink.png" width="16" height="16" alt="" /> Splatoon2.ink.</p>
     <h1>Regular Maps</h1>
     <h2>Now</h2>
     <ListRotation v-bind:schedule="schedules.regular[0]"/>
@@ -21,7 +23,7 @@
     <ListRotation v-bind:schedule="schedules.regular[1]"/>
     <h2>Later</h2>
     <ListRotation v-bind:schedule="schedules.regular[2]"/>
-
+    <p class="credit">Live data provided by <img src="src/assets/splatoon2ink.png" width="16" height="16" alt="" /> Splatoon2.ink.</p>
   </div>
 </template>
 
@@ -56,7 +58,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin: 30px auto;
-  max-width: 620px;
+  max-width: 640px;
 }
 
 h1 {
@@ -69,6 +71,8 @@ h1 {
 h2 {
   font-weight: bold;
   color: purple;
+  text-align: left;
+  margin-left: 220px;
 }
 
 ul {
@@ -81,7 +85,8 @@ li {
   margin: 0 10px;
 }
 
-a {
-  color: #42b983;
+.credit {
+  text-align: left;
+  margin-left: 220px;
 }
 </style>
