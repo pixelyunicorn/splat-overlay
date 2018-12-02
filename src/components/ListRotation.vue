@@ -1,7 +1,7 @@
 <template>
   <div class="rotation">
     <div layout="grid" column-count="3">
-      <div class="rotation-icon" :style="'background-image:url(./src/assets/'+ schedule.rule.key +'.svg)'"><span>{{ schedule.rule.key }}</span></div>
+      <div class="rotation-icon" :style="'background-image:url(./src/assets/'+ schedule.rule.key +'.png)'"><span>{{ schedule.rule.key }}</span></div>
       <div class="rotation-cube" :style="'background-image:url(https://splatoon2.ink/assets/splatnet/'+ schedule.stage_a.image+')'"><span style="background-image: url(./src/assets/sploosh.svg);">{{ schedule.stage_a.name }}</span></div>
       <div class="rotation-cube" :style="'background-image:url(https://splatoon2.ink/assets/splatnet/'+ schedule.stage_b.image+')'"><span style="background-image: url(./src/assets/sploosh.svg);">{{ schedule.stage_b.name }}</span></div>
     </div>
