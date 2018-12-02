@@ -1,47 +1,74 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+    <h1>League Maps</h1>
+    <h2>Now</h2>
+    <ListRotation v-bind:schedule="schedules.league[0]"/>
+    <h2>Next</h2>
+    <ListRotation v-bind:schedule="schedules.league[1]"/>
+    <h2>Later</h2>
+    <ListRotation v-bind:schedule="schedules.league[2]"/>
+    <h1>SoloQ Maps</h1>
+    <h2>Now</h2>
+    <ListRotation v-bind:schedule="schedules.gachi[0]"/>
+    <h2>Next</h2>
+    <ListRotation v-bind:schedule="schedules.gachi[1]"/>
+    <h2>Later</h2>
+    <ListRotation v-bind:schedule="schedules.gachi[2]"/>
+    <h1>Regular Maps</h1>
+    <h2>Now</h2>
+    <ListRotation v-bind:schedule="schedules.regular[0]"/>
+    <h2>Next</h2>
+    <ListRotation v-bind:schedule="schedules.regular[1]"/>
+    <h2>Later</h2>
+    <ListRotation v-bind:schedule="schedules.regular[2]"/>
+
   </div>
 </template>
 
 <script>
+import axios from 'axios'
+import ListRotation from './components/ListRotation.vue'
+
 export default {
   name: 'app',
+  components: { ListRotation },
   data () {
     return {
+      schedules: null,
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  mounted () {
+    axios
+      // .get('mocks/schedules.json')
+      .get('https://cors-anywhere.herokuapp.com/https://splatoon2.ink/data/schedules.json')
+      .then(response => (this.schedules = response.data))
   }
 }
 </script>
 
 <style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: Calibre, Helvetica, Arial, sans-serif;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 30px auto;
+  max-width: 620px;
 }
 
-h1, h2 {
-  font-weight: normal;
+h1 {
+  font-family: reklame-script, 'Reklame Script', Calibre, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 1em;
+}
+
+h2 {
+  font-weight: bold;
+  color: purple;
 }
 
 ul {

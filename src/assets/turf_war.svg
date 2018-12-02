@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="400px" height="400px" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>tw</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M147.5,251.55518 C203.556902,251.55518 249,201.189301 249,139.05984 C249,76.9303794 46,76.9303794 46,139.05984 C46,201.189301 91.4430979,251.55518 147.5,251.55518 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="203" height="159.092435" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M351,261.482837 C351,199.353376 305.556902,148.987497 249.5,148.987497 C193.443098,148.987497 148,199.353376 148,261.482837 C148,323.612297 351,323.612297 351,261.482837 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="203" height="159.092435" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="squids" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tw">
+            <path d="M167.5,256.530136 C223.556902,256.530136 269,206.164257 269,144.034796 C269,81.9053356 66,81.9053356 66,144.034796 C66,206.164257 111.443098,256.530136 167.5,256.530136 Z" id="Oval-6" fill="#8E41FA"></path>
+            <path d="M334,249.857909 C334,187.728449 288.556902,137.36257 232.5,137.36257 C176.443098,137.36257 131,187.728449 131,249.857909 C131,311.98737 334,311.98737 334,249.857909 Z" id="Oval-6" fill="#FD14CC"></path>
+            <path d="M268.997362,144.854426 C268.599794,206.606614 223.310189,256.530136 167.5,256.530136 C154.634831,256.530136 142.328703,253.877307 131.002638,249.038279 C131.400206,187.286092 176.689811,137.36257 232.5,137.36257 C245.365169,137.36257 257.671297,140.015398 268.997362,144.854426 Z" id="Combined-Shape" fill="#5AA6DD"></path>
+            <use id="Oval-6" stroke="#000000" mask="url(#mask-2)" stroke-width="16" xlink:href="#path-1"></use>
+            <use id="Oval-6" stroke="#000000" mask="url(#mask-4)" stroke-width="16" xlink:href="#path-3"></use>
+        </g>
+    </g>
+</svg>
